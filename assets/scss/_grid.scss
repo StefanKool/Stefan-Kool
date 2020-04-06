@@ -1,0 +1,44 @@
+// column width
+$column: 104px;
+
+.container {
+	margin: 0 auto;
+	padding: 0 16px;
+	max-width: 14*$column;
+}
+
+.container--flex {
+  display: flex;
+}
+
+.container--max-6-col {
+	max-width: 6*$column;
+}
+
+.container--max-8-col {
+	max-width: 8*$column;
+}
+
+.container--max-10-col {
+	max-width: 10*$column;
+}
+
+.container--max-12-col {
+	max-width: 12*$column;
+}
+
+.col {
+	padding: 0 12px;
+}
+
+.comp {
+  padding: 30px 0;
+  @include media(tablet-and-larger) {
+    padding: 60px 0;
+  }
+}
+
+/* reset */
+body {
+  margin: 0;
+}

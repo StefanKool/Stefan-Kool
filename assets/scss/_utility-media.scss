@@ -1,0 +1,138 @@
+// breakpoint mixins
+
+// The MDC grid has 12 columns in desktop mode (>= 840px), 8 columns in tablet mode (>= 480px), and 4 columns in phone mode (< 480px).
+
+$media-grid-end:        1200px;
+$media-desktop-start:    840px;
+$media-tablet-start:     480px;
+
+@mixin media($point) {
+    // desktop and beyond
+    @if $point == desktop-and-larger {
+        @media (min-width: $media-desktop-start) { @content; }
+    }
+    // tablet, desktop and beyond
+    @if $point == tablet-and-larger {
+        @media (min-width: $media-tablet-start) { @content; }
+    }
+    // tablet and phone
+    @if $point == tablet-and-smaller {
+        @media (max-width: ($media-desktop-start - 1px)) { @content; }
+    }
+    // tablet only
+    @if $point == tablet {
+        @media (min-width: $media-tablet-start) and (max-width: ($media-desktop-start - 1px)) { @content; }
+    }
+    // phone only
+    @if $point == phone {
+        @media (max-width: ($media-tablet-start - 1px)) { @content; }
+    }
+    // tablet and bigger plus landscape
+    @if $point == tablet-and-larger-landscape {
+      @media screen and (min-width: ($media-tablet-start)) and (min-height: 600px) { @content; }
+    }
+    // tablet and smaller plus portrait
+    @if $point == tablet-and-smaller-portait {
+      @media screen and (max-width: ($media-tablet-start - 1px)) and (max-height: 600px) { @content; }
+    }
+}
+
+// In case you need to be more specific and fix an edge case... use these:
+
+@mixin media-and-larger($min) {
+    @media (min-width: ($min * 1px)) { @content; }
+}
+
+@mixin media-between($min,$max) {
+    @media (min-width: ($min * 1px)) and (max-width: ($max * 1px)) { @content; }
+}
+
+@mixin media-and-smaller($max) {
+    @media (max-width: ($max * 1px)) { @content; }
+}
+
+/*
+
+// test classes
+
+.comp-media {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    text-align: center;
+}
+.mod-media {
+    background: black;
+    color: white;
+    float: left;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 32px;
+    text-align: center;
+    padding: 4px;
+    display: inline-block;
+}
+.mod-media--desktop-and-larger {
+    background: red;
+    color: white;
+    display: none;
+    @include media(desktop-and-larger) {
+      display: block
+    }
+}
+.mod-media--tablet-and-larger {
+    background: green;
+    color: white;
+    display: none;
+    @include media(tablet-and-larger) {
+      display: block
+    }
+}
+.mod-media--tablet-and-smaller {
+    background: purple;
+    color: white;
+    display: none;
+    @include media(tablet-and-smaller) {
+      display: block
+    }
+}
+.mod-media--tablet {
+    background: blue;
+    color: white;
+    display: none;
+    @include media(tablet) {
+      display: block
+    }
+}
+.mod-media--phone {
+    background: orange;
+    color: white;
+    display: none;
+    @include media(phone) {
+      display: block
+    }
+}
+
+// test html
+
+    <div class="comp-media">
+        <div class="mod-media mod-media--desktop-and-larger">
+            desktop
+        </div>
+        <div class="mod-media mod-media--tablet-and-larger">
+            tablet + desktop
+        </div>
+        <div class="mod-media mod-media--tablet-and-smaller">
+            phone + tablet
+        </div>
+        <div class="mod-media mod-media--tablet">
+            tablet
+        </div>
+        <div class="mod-media mod-media--phone">
+            phone
+        </div>
+        <div class="mod-media">
+            always
+        </div>
+    </div>
+*/

@@ -6,7 +6,7 @@
           <div
             class="mdl-cell mdl-cell--3-col mdl-cell--3-col-tablet mdl-cell--4-col-phone mdl-cell-print--left-col resume--padding"
           >
-            <img src="img/stefan-print.png" />
+            <img src="~/assets/img/stefan-print.png" />
           </div>
           <div
             class="mdl-cell mdl-cell--9-col mdl-cell--5-col-tablet mdl-cell--4-col-phone resume--padding -no-padding-left"
@@ -252,7 +252,7 @@
             </section>
             <section class="-margin-bottom-5sp">
               <h5 class="type--bold-sc">Download</h5>
-              <img src="img/qrcode-en.svg" style="width: 72%;" />
+              <img src="~/assets/img/qrcode-en.svg" style="width: 72%;" />
             </section>
           </div>
         </div>
@@ -320,7 +320,7 @@
                         <div
                           class="resume__portfolio-panel resume-background-c1"
                         >
-                          <img src="img/logo_deltares.png" width="180" />
+                          <img src="~/assets/img/logo_deltares.png" width="180" />
                         </div>
                         <span class="type--bold-sc">Deltares</span>
                         <p class="-no-margin-bottom">
@@ -336,13 +336,12 @@
                         <div
                           class="resume__portfolio-panel resume-background-c8"
                         >
-                          <img src="img/logo_voorhoede.svg" width="160" />
+                          <img src="~/assets/img/logo_voorhoede.svg" width="160" />
                         </div>
                         <span class="type--bold-sc">Voorhoede</span>
                         <p class="-no-margin-bottom">
                           Scrum Master en Front-end ontwikkelaar. Advocating
-                          Scrum doormiddel van workshops, lezingen en Scrum
-                          Master.
+                          Scrum doormiddel van workshops.
                         </p>
                       </div>
                     </div>
@@ -353,7 +352,7 @@
                         <div
                           class="resume__portfolio-panel resume-background-c2"
                         >
-                          <img src="img/logo_aftm.png" width="120" />
+                          <img src="~/assets/img/logo_aftm.png" width="120" />
                         </div>
                         <span class="type--bold-sc">Aimforthemoon</span>
                         <p class="-no-margin-bottom">
@@ -369,7 +368,7 @@
                         <div
                           class="resume__portfolio-panel resume-background-tr"
                         >
-                          <img src="img/logo_koppert.png" width="120" />
+                          <img src="~/assets/img/logo_koppert.png" width="120" />
                         </div>
                         <span class="type--bold-sc">Koppert</span>
                         <p class="-no-margin-bottom">
@@ -384,11 +383,11 @@
                         <div
                           class="resume__portfolio-panel resume-background-tr"
                         >
-                          <img src="img/logo_qutech.svg" width="70" />
+                          <img src="~/assets/img/logo_qutech.svg" width="64" />
                         </div>
                         <span class="type--bold-sc">QUTech</span>
                         <p class="-no-margin-bottom">
-                          Dedicated Scrum master for the Quantum Inspire and Quantum Innternet front-end teams.
+                          Dedicated Scrum master for the Quantum Inspire and Quantum Internet front-end teams.
                         </p>
                       </div>
                     </div>
@@ -428,7 +427,7 @@
                         <div
                           class="resume__portfolio-panel resume-background-c2"
                         >
-                          <img src="img/logo_ziggo.svg" width="80" />
+                          <img src="~/assets/img/logo_ziggo.svg" width="80" />
                         </div>
                         <span class="type--bold-sc">ontdek.ziggo.nl</span>
                         <p class="-no-margin-bottom">
@@ -444,8 +443,8 @@
                         <div
                           class="resume__portfolio-panel resume-background-c1"
                         >
-                          <img src="img/logo_vodafone.svg" width="120" />
-                          <img src="img/logo_ziggo.svg" width="60" />
+                          <img src="~/assets/img/logo_vodafone.svg" width="120" />
+                          <img src="~/assets/img/logo_ziggo.svg" width="60" />
                         </div>
                         <span class="type--bold-sc">vodafoneziggo.com</span>
                         <p class="-no-margin-bottom">
@@ -461,7 +460,7 @@
                         <div
                           class="resume__portfolio-panel resume-background-c3"
                         >
-                          <img src="img/logo_ziggo.svg" width="80" />
+                          <img src="~/assets/img/logo_ziggo.svg" width="80" />
                         </div>
                         <span class="type--bold-sc">www.ziggo.tv</span>
                         <p class="-no-margin-bottom">
@@ -558,10 +557,10 @@
                     >
                       <div class="resume__portfolio-item">
                         <div
-                          class="resume__certification-panel resume-background-psm"
+                          class="resume__certification-panel resume-background-sps"
                         >
                           <img
-                            src="img/badge-sps.svg"
+                            src="~/assets/img/badge-sps.svg"
                             width="66"
                             height="112"
                           />
@@ -648,12 +647,12 @@
                           class="resume__certification-panel resume-background-psm"
                         >
                           <img
-                            src="img/badge-psmi.svg"
+                            src="~/assets/img/badge-psmi.svg"
                             width="66"
                             height="112"
                           />
                           <img
-                            src="img/badge-psmii.svg"
+                            src="~/assets/img/badge-psmii.svg"
                             width="66"
                             height="112"
                           />
@@ -672,7 +671,7 @@
                           class="resume__certification-panel resume-background-pspo"
                         >
                           <img
-                            src="img/badge-pspoi.svg"
+                            src="~/assets/img/badge-pspoi.svg"
                             width="66"
                             height="112"
                           />
@@ -691,7 +690,7 @@
                           class="resume__certification-panel resume-background-psd"
                         >
                           <img
-                            src="img/badge-psdi.svg"
+                            src="~/assets/img/badge-psdi.svg"
                             width="66"
                             height="112"
                           />
@@ -928,6 +927,9 @@ ul {
 }
 .resume-background-c8 {
   background-color: #fffeca; /* Voorhoede paper */
+}
+.resume-background-sps {
+  background-color: rgba(67, 153, 181, 0.3);
 }
 .resume-background-psm {
   background-color: rgba(58, 124, 154, 0.3);

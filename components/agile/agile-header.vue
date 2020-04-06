@@ -8,11 +8,11 @@
     </div>
     <div class="card card-4">
       <div>
-        <img src="~/static/img/badge-psmii.svg" width="70" height="119" />
-        <img src="~/static/img/badge-sps.svg" width="70" height="119" /><br />
-        <img src="~/static/img/badge-psmi.svg" width="70" height="119" />
-        <img src="~/static/img/badge-pspoi.svg" width="70" height="119" />
-        <img src="~/static/img/badge-psdi.svg" width="70" height="119" />
+        <img src="~/assets/img/badge-psmii.svg" width="70" height="119" />
+        <img src="~/assets/img/badge-sps.svg" width="70" height="119" /><br />
+        <img src="~/assets/img/badge-psmi.svg" width="70" height="119" />
+        <img src="~/assets/img/badge-pspoi.svg" width="70" height="119" />
+        <img src="~/assets/img/badge-psdi.svg" width="70" height="119" />
       </div>
     </div>
   </header>

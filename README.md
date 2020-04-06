@@ -1,4 +1,4 @@
-# Vue.js + DatoCMS + Bulma demo
+# Vue.js + DatoCMS
 
 ## Deploy on DatoCMS
 

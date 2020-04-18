@@ -1,6 +1,6 @@
 <template>
   <section class="comp comp-article">
-    <article class="container container--max-6-col">
+    <article class="container container--grid">
       <figure>
         <datocms-image class="image" :data="post.coverImage.responsiveImage" />
         <figcaption>This foto is by</figcaption>
@@ -24,6 +24,7 @@ import parseISO from 'date-fns/parseISO'
 
 export default {
   layout: 'detail',
+  name: 'article-detail-page',
   async asyncData({ params }) {
     const data = await request({
       query: gql`
@@ -83,3 +84,27 @@ export default {
   }
 }
 </script>
+
+<style lang="scss">
+/* add utilities */
+@import "~assets/scss/utilities.scss";
+
+.comp-article {
+  .container--grid {
+    grid-row-gap: 0;
+    grid-auto-rows: max-content;
+    & * {
+      max-width: 38rem;
+      grid-column-end: span 4;
+      @include media(tablet-and-larger) {
+        grid-column-end: span 6;
+        grid-column-start: 2;
+      }
+      @include media(desktop-and-larger) {
+        grid-column-end: span 11;
+        grid-column-start: 4;
+      }
+    }
+  }
+}
+</style>

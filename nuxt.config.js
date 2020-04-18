@@ -49,7 +49,7 @@ export default {
     postcss: {
       preset: {
         features: {
-          customProperties: false
+          customProperties: true
         }
       }
     },

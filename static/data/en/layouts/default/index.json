@@ -1,0 +1,63 @@
+{
+  "components": [
+    {
+      "component": "agile-header",
+      "title": "",
+      "subTitle": "",
+      "items": []
+    },
+    {
+      "component": "app-divider",
+      "class": ""
+    },
+    {
+      "component": "agile-expertise",
+      "title": "",
+      "subTitle": "",
+      "items": []
+    },
+    {
+      "component": "app-divider",
+      "class": "app-divider--reverse app-divider--alternate"
+    },
+    {
+      "component": "agile-t-shape",
+      "title": "",
+      "subTitle": "",
+      "href": "",
+      "items": []
+    },
+    {
+      "component": "app-divider",
+      "class": "app-divider--alternate"
+    },
+    {
+      "component": "articles-list",
+      "title": ""
+    },
+    {
+      "component": "agile-lean-practitioner",
+      "title": "",
+      "href": ""
+    },
+    {
+      "component": "agile-contact",
+      "title": ""
+    },
+    {
+      "component": "app-divider",
+      "class": "app-divider--reverse"
+    },
+    {
+      "component": "agile-reading",
+      "title": "",
+      "items": [
+        {
+          "title": "",
+          "image": "",
+          "href": ""
+        }
+      ]
+    }
+  ]
+}

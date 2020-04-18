@@ -2,122 +2,125 @@
 
 @font-face {
   font-family: 'contax_pro_35_thin_sm_capRg';
-  src:  url('~assets/fonts/contaxpro_35thinsmcap_macroman/ContaxPro35ThinSC-webfont.woff2') format('woff2'),
-        url('~assets/fonts/contaxpro_35thinsmcap_macroman/ContaxPro35ThinSC-webfont.woff') format('woff');
+  src: url('~assets/fonts/contaxpro_35thinsmcap_macroman/ContaxPro35ThinSC-webfont.woff2')
+      format('woff2'),
+    url('~assets/fonts/contaxpro_35thinsmcap_macroman/ContaxPro35ThinSC-webfont.woff')
+      format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'contax_pro_55regular';
-  src:  url('~assets/fonts/contaxpro_55regular_macroman/ContaxPro55Rm-webfont.woff2') format('woff2'),
-        url('~assets/fonts/contaxpro_55regular_macroman/ContaxPro55Rm-webfont.woff') format('woff');
+  src: url('~assets/fonts/contaxpro_55regular_macroman/ContaxPro55Rm-webfont.woff2')
+      format('woff2'),
+    url('~assets/fonts/contaxpro_55regular_macroman/ContaxPro55Rm-webfont.woff')
+      format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'contax_pro_55_sm_capregular';
-  src:  url('~assets/fonts/contaxpro_55smcap_macroman/ContaxPro55RmSC-webfont.woff2') format('woff2'),
-        url('~assets/fonts/contaxpro_55smcap_macroman/ContaxPro55RmSC-webfont.woff') format('woff');
+  src: url('~assets/fonts/contaxpro_55smcap_macroman/ContaxPro55RmSC-webfont.woff2')
+      format('woff2'),
+    url('~assets/fonts/contaxpro_55smcap_macroman/ContaxPro55RmSC-webfont.woff')
+      format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'contax_pro_75_bold_sm_capbold';
-  src:  url('~assets/fonts/contaxpro_75boldsmcap_macroman/ContaxPro75BoldSC-webfont.woff2') format('woff2'),
-        url('~assets/fonts/contaxpro_75boldsmcap_macroman/ContaxPro75BoldSC-webfont.woff') format('woff');
+  src: url('~assets/fonts/contaxpro_75boldsmcap_macroman/ContaxPro75BoldSC-webfont.woff2')
+      format('woff2'),
+    url('~assets/fonts/contaxpro_75boldsmcap_macroman/ContaxPro75BoldSC-webfont.woff')
+      format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 
-html, body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  // font-size: 14px;
-  font-size: 1rem;
+html,
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+    'Segoe UI Symbol', sans-serif;
+
+  font-size: 1em; // 16px
+  line-height: 1.5; // 24px
   font-weight: 400;
-  // line-height: 20px;
-  color: $color-grey-800; }
+  color: var(--color-grey-900);
+}
 
 h1, h2, h3, h4, h5, h6, p {
   margin: 0;
   padding: 0; }
 
-h1, h2, h3, h4, h5, h6, p {
-  a {
-    color: $color-grey-800;
-    text-decoration: none;
-    &:hover {
-      text-decoration: none;
-    }
-  }
+h1,
+.h1 {
+  font-family: 'contax_pro_55regular', sans-serif;
+  font-size: 3.5rem; // 56px
+  font-weight: 400;
+  line-height: 1.15; // 64px
+  margin-top: 1.5rem; // 24px
+  margin-bottom: 1.5rem; // 24px
 }
 
-h1, .h1 {
-  font-family: "contax_pro_75_bold_sm_capbold", sans-serif;
-  font-size: 56px;
+h2,
+.h2 {
+  font-family: 'contax_pro_55regular', sans-serif;
+  font-size: 2.83rem; // 45px
   font-weight: 400;
-  line-height: 1.35;
-  margin-top: 24px;
-  margin-bottom: 24px;
+  line-height: 1.1; // 48px
+  margin-top: 1.5rem; // 24px
+  margin-bottom: 1.5rem; // 24px
 }
 
-h2, .h2 {
-  font-family: "contax_pro_55regular", sans-serif;
-  font-size: 45px;
+h3,
+.h3 {
+  font-family: 'contax_pro_55regular', sans-serif;
+  font-size: 2.125rem; // 34px
   font-weight: 400;
-  line-height: 48px;
-  margin-top: 24px;
-  margin-bottom: 24px;
+  line-height: 1.07; // 40px
+  margin-top: 1.5rem; // 24px
+  margin-bottom: 1.5rem; // 24px
 }
 
-h3, .h3 {
-  font-family: "contax_pro_55regular", sans-serif;
-  font-size: 34px;
+h4,
+.h4 {
+  font-family: 'contax_pro_55regular', sans-serif;
+  font-size: 1.5rem; // 24px
   font-weight: 400;
-  line-height: 40px;
-  margin-top: 24px;
-  margin-bottom: 24px;
+  line-height: 1.35; // 32px
+  margin-top: 1.5rem; // 24px
+  margin-bottom: 1rem; // 16px
 }
 
-h4, .h4 {
-  font-family: "contax_pro_55regular", sans-serif;
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 32px;
-  -moz-osx-font-smoothing: grayscale;
-  margin-top: 24px;
-  margin-bottom: 16px;
+h5,
+.h5 {
+  font-family: 'contax_pro_55regular', sans-serif;
+  font-size: 1.25rem; // 20px
+  font-weight: 500;
+  line-height: 1.2; // 24px
+  letter-spacing: 0.02em;
+  margin-top: 1.5rem; // 24px
+  margin-bottom: 1rem; // 16px
 }
 
-h5, .h5 {
-  font-family: "contax_pro_55regular", sans-serif;
-  font-size: 20px;
+h6,
+.h6 {
+  font-family: 'contax_pro_55regular', sans-serif;
+  font-size: 1rem; // 16px
   font-weight: 400;
-  line-height: 1;
-  margin-top: 24px;
-  margin-bottom: 16px;
-}
-
-h6, .h6 {
-  font-family: "contax_pro_55regular", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
+  line-height: 1.5; // 24px
   letter-spacing: 0.04em;
-  margin-top: 24px;
-  margin-bottom: 16px;
+  margin-top: 1.5rem; // 24px
+  margin-bottom: 1rem; // 16px
 }
-
-p {
-  line-height: 24px;
-  letter-spacing: 0;
-  margin-bottom: 16px; }
 
 a {
-  color: #192d40;
+  color: var(--color-brand-primary);
   font-weight: 500;
   text-decoration: none;
   &:hover {
@@ -125,76 +128,90 @@ a {
   }
 }
 
-blockquote {
-  font-family: "contax_pro_35_thin_sm_capRg", sans-serif;
-  position: relative;
-  font-size: 24px;
-  font-weight: 300;
-  font-style: italic;
-  line-height: 1.35;
-  letter-spacing: 0.08em; }
-  blockquote:before {
-    position: absolute;
-    left: -0.5em;
-    content: '“'; }
-  blockquote:after {
-    content: '”';
-    margin-left: -0.05em; }
-
-mark {
-  background-color: #f4ff81; }
-
-dt {
-  font-weight: 700; }
-
-address {
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 1;
-  letter-spacing: 0;
-  font-style: normal; }
-
-ul, ol {
-  // font-size: 14px;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0;
+p {
+  margin: 0 0 1rem 0;
+  padding: 0;
+  img {
+    float: left;
+    margin: 0 1rem 1rem 0;
+  }
 }
 
+blockquote {
+  font-family: 'contax_pro_35_thin_sm_capRg', sans-serif;
+  position: relative;
+  font-style: italic;
+  &:before {
+    position: absolute;
+    left: -0.5rem;
+    content: '“';
+  }
+  &:after {
+    content: '”';
+    margin-left: -0.05rem;
+  }
+}
 
+mark {
+  background-color: #f4ff81;
+}
+
+dt {
+  font-weight: 700;
+}
+
+address {
+  font-style: normal;
+}
+
+ul,
+ol {
+  li {
+    margin: 0.5rem 0;
+  }
+  margin: 1rem 0;
+  padding-left: 1.5rem;
+}
 
 .type--light {
-  opacity: .54;
+  opacity: 0.5;
 }
 
 .type--thin-cpr-sc {
   font-family: 'contax_pro_35_thin_sm_capRg';
-  font-weight: normal;
-  line-height: 1;
 }
 
 .type--bold-sc {
   font-family: 'contax_pro_75_bold_sm_capbold';
-  font-weight: normal;
-  line-height: 1;
 }
 
 .type--regular {
   font-family: 'contax_pro_55regular';
-  font-weight: normal;
 }
 
 .type--regular-sc {
   font-family: 'contax_pro_55_sm_capregular';
-  font-weight: normal;
-  line-height: 1;
 }
 
 .type--intro {
   font-weight: bold;
-  font-size: 16px;
+}
+
+.type--small {
+  font-size: 0.875rem; // 14px
+  font-weight: 400;
+  line-height: 1.25rem; // 20px
 }
 
 .type--uppercase {
   text-transform: uppercase;
+}
+
+.type--margin {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+.type--margin-large {
+  margin-top: 10px;
+  display: inline-block;
 }

@@ -1,9 +1,7 @@
 // breakpoint mixins
 
-// The MDC grid has 12 columns in desktop mode (>= 840px), 8 columns in tablet mode (>= 480px), and 4 columns in phone mode (< 480px).
-
-$media-grid-end:        1200px;
-$media-desktop-start:    840px;
+$media-grid-end:        1440px;
+$media-desktop-start:    832px;
 $media-tablet-start:     480px;
 
 @mixin media($point) {
@@ -50,89 +48,3 @@ $media-tablet-start:     480px;
 @mixin media-and-smaller($max) {
     @media (max-width: ($max * 1px)) { @content; }
 }
-
-/*
-
-// test classes
-
-.comp-media {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    text-align: center;
-}
-.mod-media {
-    background: black;
-    color: white;
-    float: left;
-    font-size: 24px;
-    font-weight: bold;
-    line-height: 32px;
-    text-align: center;
-    padding: 4px;
-    display: inline-block;
-}
-.mod-media--desktop-and-larger {
-    background: red;
-    color: white;
-    display: none;
-    @include media(desktop-and-larger) {
-      display: block
-    }
-}
-.mod-media--tablet-and-larger {
-    background: green;
-    color: white;
-    display: none;
-    @include media(tablet-and-larger) {
-      display: block
-    }
-}
-.mod-media--tablet-and-smaller {
-    background: purple;
-    color: white;
-    display: none;
-    @include media(tablet-and-smaller) {
-      display: block
-    }
-}
-.mod-media--tablet {
-    background: blue;
-    color: white;
-    display: none;
-    @include media(tablet) {
-      display: block
-    }
-}
-.mod-media--phone {
-    background: orange;
-    color: white;
-    display: none;
-    @include media(phone) {
-      display: block
-    }
-}
-
-// test html
-
-    <div class="comp-media">
-        <div class="mod-media mod-media--desktop-and-larger">
-            desktop
-        </div>
-        <div class="mod-media mod-media--tablet-and-larger">
-            tablet + desktop
-        </div>
-        <div class="mod-media mod-media--tablet-and-smaller">
-            phone + tablet
-        </div>
-        <div class="mod-media mod-media--tablet">
-            tablet
-        </div>
-        <div class="mod-media mod-media--phone">
-            phone
-        </div>
-        <div class="mod-media">
-            always
-        </div>
-    </div>
-*/

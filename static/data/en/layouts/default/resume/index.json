@@ -1,0 +1,154 @@
+{
+  "header": {
+    "firstName": "Stefan",
+    "surName": "Kool",
+    "photo": {
+      "src":"stefan-print.png",
+      "width": 230,
+      "height": 287
+    },
+    "titles": "BSc, MICS, PSM-II, PSPO-I, PSD-I",
+    "phone": "+31.6.245.48.006",
+    "email": "stefankool78@gmail.com",
+    "address": "Boompjes 482, 3011 XZ Rotterdam",
+    "birthdate": "20<sup>th</sup> januari 1978, Rotterdam",
+    "pdf": "http://resume.stefankool.nl/stefankool_resume-en.pdf"
+  },
+  "aside": [
+    {
+      "module": "online"
+    },
+    {
+      "module": "references"
+    },
+    {
+      "module": "languages"
+    },
+    {
+      "module": "aside-list"
+    },
+    {
+      "module": "download"
+    }
+  ],
+  "body": [
+    {
+      "module": "profile",
+      "title": "Profile",
+      "description": "Enthousiast en overtuigt van de Agile principes. Werk ik graag met teams samen aan process optimalisatie en product ontwikkeling. Rust, flexibiliteit en transparantie zijn voorbeelden van mijn persoonlijke kenmerken. Deze komen van pas bij mijn rol en scheppen een persoonlijk vertrouwen. Mijn autoriteit en uitstraling geven teamleden de kans om hun verantwoordelijkheid te nemen. Waarmee de beschikbare kennis in het team wordt ontsloten."
+    },
+    {
+      "module": "section",
+      "title": "Work Experience",
+      "items": [
+        {
+          "title": "Scrum Master",
+          "subTitle": "de Voorhoede B.V.",
+          "description": "Scrum Master en Front-end web development; responsive HTML templating van design naar CMS beheerbare componenten, JS DOM manipulatie, opzetten en onderhouden van workflows en CSS libraries binnen corporate domeinen, front-end optimalisaties en Google AMP pages, A/B tests, speciale campagne pagina’s. Account management en opstellen van offertes. Twee en een half jaar ervaring binnen Scrum teams als developer.",
+          "startYear": 2018,
+          "endYear": 2019,
+          "achievements": [],
+          "portfolio": [
+            {
+              "title": "Deltares",
+              "description": "Scrum Master en Front-end development voor web viewer projecten.",
+              "insetPrimary": "logo_deltares.png",
+              "insetPrimaryWidth": 180,
+              "insetSecondary": "",
+              "insetSecondaryWidth": null,
+              "backgroundColor": "#f3f3f3"
+            },
+            {
+              "title": "De Voorhoede",
+              "description": "Scrum Master en Front-end ontwikkelaar. Advocating Scrum doormiddel van workshops.",
+              "insetPrimary": "logo_voorhoede.svg",
+              "insetPrimaryWidth": 160,
+              "insetSecondary": "",
+              "insetSecondaryWidth": null,
+              "backgroundColor": "#fffeca"
+            },
+            {
+              "title": "Aimforthemoon",
+              "description": "Scrum Master for startup teams at Aimforthemoon. Syncing Scrum with Lean startup in de build phase.",
+              "insetPrimary": "logo_aftm.png",
+              "insetPrimaryWidth": 120,
+              "insetSecondary": "",
+              "insetSecondaryWidth": null,
+              "backgroundColor": "#2a3425"
+            },
+            {
+              "title": "Koppert",
+              "description": "Dedicated Scrum master voor de Natutec Scout portals.",
+              "insetPrimary": "logo_koppert.png",
+              "insetPrimaryWidth": 120,
+              "insetSecondary": "",
+              "insetSecondaryWidth": null,
+              "backgroundColor": "transparent"
+            },
+            {
+              "title": "QuTech",
+              "description": "Dedicated Scrum master for the Quantum Inspire and Quantum Internet front-end teams.",
+              "insetPrimary": "logo_qutech.svg",
+              "insetPrimaryWidth": 64,
+              "insetSecondary": "",
+              "insetSecondaryWidth": null,
+              "backgroundColor": "transparent"
+            }
+          ]
+        },
+        {
+          "title": "Front-end Web Developer",
+          "subTitle": "Webavance B.V.",
+          "description": "ScrFront-end web development; building responsive HTML templates from design to CMS integrated components, JS DOM manipulation, setting up and maintaining workflows and CSS libraries for corporate domains, front-end optimasations and Google AMP pages, A/B tests, special campaign pages. Account management and writing offers. Two and a half years of experience within Scrum teams as a developer.",
+          "startYear": 2012,
+          "endYear": 2018,
+          "achievements": [],
+          "portfolio": [
+            {
+              "title": "ontdek.ziggo.nl",
+              "description": "Ziggo entertainment portal. Articles about campains, Ziggo Sport and Events.",
+              "insetPrimary": "logo_deltares.png",
+              "insetPrimaryWidth": 180,
+              "insetSecondary": "",
+              "insetSecondaryWidth": null,
+              "backgroundColor": "#f3f3f3"
+            },
+            {
+              "title": "vodafoneziggo.com",
+              "description": "Rebranding of the Ziggo corporate portal. All corporate information and vacancies.",
+              "insetPrimary": "logo_voorhoede.svg",
+              "insetPrimaryWidth": 160,
+              "insetSecondary": "",
+              "insetSecondaryWidth": null,
+              "backgroundColor": "#fffeca"
+            },
+            {
+              "title": "www.ziggo.tv",
+              "description": "Ziggo entertainment portal with all highlights, On demand catalog and tv-guide.",
+              "insetPrimary": "logo_aftm.png",
+              "insetPrimaryWidth": 120,
+              "insetSecondary": "",
+              "insetSecondaryWidth": null,
+              "backgroundColor": "#2a3425"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "module": "section",
+      "title": "Education",
+      "items": [
+        {
+          "title": "",
+          "subTitle": "",
+          "description": "",
+          "startYear": null,
+          "endYear": null,
+          "achievements": [],
+          "portfolio": []
+        }
+      ]
+    }
+  ]
+}

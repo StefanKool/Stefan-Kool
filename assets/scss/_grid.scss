@@ -1,44 +1,112 @@
-// column width
-$column: 104px;
-
 .container {
 	margin: 0 auto;
-	padding: 0 16px;
-	max-width: 14*$column;
+	padding: 0 1rem;
+  max-width: var(--max_width);
+
+  &.container--grid {
+    display: grid;
+    grid-template-columns: repeat(var(--columns), 1fr);
+    grid-gap: var(--gutter);
+    grid-auto-rows: minmax(6rem, auto);
+    // grid-template-areas: "margin main main main main main main main main main main main main margin";
+  }
 }
 
-.container--flex {
-  display: flex;
-}
-
-.container--max-6-col {
-	max-width: 6*$column;
-}
-
-.container--max-8-col {
-	max-width: 8*$column;
-}
-
-.container--max-10-col {
-	max-width: 10*$column;
-}
-
-.container--max-12-col {
-	max-width: 12*$column;
+.text {
+  p,
+  ul,
+  ol {
+    max-width: 38rem;
+  }
 }
 
 .col {
-	padding: 0 12px;
+	padding: 0 1rem;
 }
 
 .comp {
-  padding: 30px 0;
+  padding: 2rem 0;
   @include media(tablet-and-larger) {
-    padding: 60px 0;
+    padding: 4rem 0;
   }
 }
 
 /* reset */
 body {
   margin: 0;
+}
+
+
+/* Settings */
+:root {
+  --offset: 1rem;
+  --max_width: 90rem; // 1440px
+  --columns: 4;
+  --gutter: 1rem;
+  --baseline: 0.5rem;
+  --baseline-shift: 0;
+  --color: hsla(204, 80%, 72%, 0.25);
+  --color-text: hsla(204, 80%, 72%, 1);
+  --media-query: 'phone';
+  @include media(tablet-and-larger) {
+    --columns: 8;
+    --media-query: 'tablet and larger';
+  }
+  @include media(desktop-and-larger) {
+    --columns: 14;
+    --media-query: 'desktop and larger';
+  }
+}
+
+/* Helper variables */
+:root {
+  --repeating-width: calc(100% / var(--columns));
+  --column-width: calc((100% / var(--columns)) - var(--gutter));
+  --background-width: calc(100% + var(--gutter));
+  --background-columns: repeating-linear-gradient(
+    to right,
+    var(--color),
+    var(--color) var(--column-width),
+    transparent var(--column-width),
+    transparent var(--repeating-width)
+  );
+  --background-baseline: repeating-linear-gradient(
+    to bottom,
+    var(--color),
+    var(--color) 1px,
+    transparent 1px,
+    transparent var(--baseline)
+  );
+}
+
+html {
+  position: relative;
+}
+
+html::before {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin-right: auto;
+  margin-left: auto;
+  width: calc(100% - (2 * var(--offset)));
+  max-width: var(--max_width);
+  min-height: 100vh;
+  content: '';
+  background-image: var(--background-columns), var(--background-baseline);
+  background-size: var(--background-width) 100%;
+  background-position: 0 var(--baseline-shift);
+  z-index: 1000;
+  pointer-events: none;
+}
+
+html::after {
+  content: var(--media-query);
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  color: var(--color-text);
 }

@@ -1,6 +1,6 @@
 <template>
    <section class="comp comp-agile-expertise">
-      <ul class="container container--flex container--max-10-col">
+      <ul class="container container--grid">
         <li>
           <h3>Organize<br /> Facilitate<br /> Coach</h3>
           <p>coaching and scaling agile</p>
@@ -19,9 +19,15 @@
 
 <style lang="scss">
 .comp-agile-expertise {
+  .container--grid {
+    justify-content: center;
+  }
   li {
     list-style: none;
-    width: 33%;
+    grid-column-end: span 4;
+    &:first-child {
+      grid-column-start: 2;
+    }
   }
 }
 </style>

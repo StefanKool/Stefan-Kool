@@ -4,6 +4,9 @@
       <nuxt-link to="/">
         footer nav Home
       </nuxt-link>
+      <nuxt-link to="/design-system">
+        footer nav Design system
+      </nuxt-link>
     </div>
   </footer>
 </template>

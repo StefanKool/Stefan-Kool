@@ -1,7 +1,7 @@
 <template>
   <header class="comp comp-agile-header">
-    <div class="container container--max-10-col">
-      <h1 class="display-5">
+    <div class="container">
+      <h1>
         <span class="type--regular-sc type--uppercase">Stefan</span><span class="type--thin-cpr-sc type--uppercase">Kool</span>
       </h1>
       <h2 class="h6 type--thin-cpr-sc">Certified Scrum master based in Rotterdam the Netherlands</h2>
@@ -29,7 +29,6 @@
   background-color: $color-brand-primary;
   color: $color-grey-0;
   padding: 120px 0;
-
   h1, h2 {
     text-align: center;
   }
@@ -43,10 +42,10 @@
   background: #fff;
   border-radius: 30px 0 0 30px;
   width: auto;
-  transform: skewY(-10deg);
+  transform: skewY(-5deg);
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
   & div {
-    transform: skewY(10deg);
+    transform: skewY(5deg);
     padding: 30px;
     color: $color-grey-1000;
     text-align: center;

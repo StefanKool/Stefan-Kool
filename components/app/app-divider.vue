@@ -1,6 +1,5 @@
 <template>
-  <div class="comp-app-divider">
-  </div>
+  <hr class="comp-app-divider" />
 </template>
 
 <script>
@@ -15,7 +14,12 @@ export default {
 
 .comp-app-divider {
   clip-path: polygon(0 100%, 0 0, 100% 0);
-  height: 160px;
+  height: 0;
+  padding: 0;
+  padding-bottom: 5%;
+  margin: 0;
+  border-width: 0;
+  margin-bottom: -1px;
   background-color: $color-brand-primary;
   &.app-divider--reverse {
     clip-path: polygon(0 100%, 100% 100%, 100% 0);

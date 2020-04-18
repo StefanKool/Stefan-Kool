@@ -1,6 +1,6 @@
 <template>
   <section class="comp comp-articles-list">
-      <ul class="container container--max-8-col">
+      <ul class="container">
         <li
           v-for="post in posts"
           v-bind:key="post.slug"

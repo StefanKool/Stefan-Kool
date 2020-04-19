@@ -23,7 +23,10 @@ export default {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: ['~/plugins/datocms-image'],
+  plugins: [
+    '~/plugins/app-core-components',
+    '~/plugins/datocms-image'
+  ],
   /*
    ** Nuxt.js dev-modules
    */
@@ -35,7 +38,14 @@ export default {
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
     // Doc: https://github.com/nuxt-community/dotenv-module
-    '@nuxtjs/dotenv'
+    '@nuxtjs/dotenv',
+    // Doc: https://www.npmjs.com/package/nuxt-svg-sprite-module
+    ['nuxt-svg-sprite-module', {
+      directory: '~/assets/icons',
+      options: {
+        // Config: https://github.com/jkphl/svg-sprite#configuration-basics
+      }
+    }]
   ],
   /*
    ** Axios module configuration

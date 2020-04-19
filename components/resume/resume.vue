@@ -434,10 +434,11 @@ svg {
   .resume__item {
     page-break-inside: avoid;
   }
-
+/*
   .print-footer {
-    /* display: block !important; */
+    display: block !important;
   }
+ */
 
   /*
 * Print page css

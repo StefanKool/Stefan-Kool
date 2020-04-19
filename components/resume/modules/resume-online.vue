@@ -2,10 +2,9 @@
   <section class="margin-bottom-5sp">
     <h5 class="type--bold-sc padding-top-2p">Online</h5>
     <div class="column-row">
-      <span
-        class="resume__icon-panel background-color--linkedin"
-        ><i class="fa-fw fab fa-linkedin-in"></i
-      ></span>
+      <span class="resume__icon-panel background-color--linkedin"
+        ><app-icon :iconId="'linkedin'"
+      /></span>
       <nobr
         ><a href="http://bit.ly/2HTALK4" title="my linkedin page"
           >linkedin.com</a
@@ -14,32 +13,24 @@
     </div>
     <div class="column-row">
       <span class="resume__icon-panel background-color--scrum"
-        ><i class="fas fa-fw fa-globe"></i
-      ></span>
-      <a href="http://bit.ly/2G3Cdcp" title="my scrum.org page"
-        >scrum.org</a
-      >
+        ><app-icon :iconId="'globe'"
+      /></span>
+      <a href="http://bit.ly/2G3Cdcp" title="my scrum.org page">scrum.org</a>
     </div>
     <div class="column-row">
       <span class="resume__icon-panel background-color--strava"
-        ><i class="fab fa-fw fa-strava"></i
-      ></span>
-      <a href="http://bit.ly/2GPScMc" title="my strava page"
-        >strava.com</a
-      >
+        ><app-icon :iconId="'strava'"
+      /></span>
+      <a href="http://bit.ly/2GPScMc" title="my strava page">strava.com</a>
     </div>
     <div class="column-row">
-      <span class="resume__icon-panel"
-        ><i class="fas fa-fw fa-camera"></i
-      ></span>
-      <a href="http://bit.ly/2uf95xw" title="my website"
-        >stefankool.nl</a
-      >
+      <span class="resume__icon-panel"><app-icon :iconId="'camera'"/></span>
+      <a href="http://bit.ly/2uf95xw" title="my website">stefankool.nl</a>
     </div>
     <div class="column-row">
       <span class="resume__icon-panel color--bitbucket"
-        ><i class="fab fa-fw fa-bitbucket"></i
-      ></span>
+        ><app-icon :iconId="'bitbucket'"
+      /></span>
       <a href="https://bit.ly/2NoYZig" title="my git repositories"
         >bitbucket.org</a
       >
@@ -55,7 +46,7 @@ export default {
 
 <style lang="scss">
 /* add utilities */
-@import "~assets/scss/utilities.scss";
+@import '~assets/scss/utilities.scss';
 
 .resume__icon-panel {
   display: inline-block;
@@ -115,5 +106,3 @@ export default {
   color: #fff;
 }
 </style>
-
-

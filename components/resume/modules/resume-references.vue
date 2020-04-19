@@ -7,7 +7,7 @@
     <div class="column-row margin-bottom-2sp">
       <div class="resume__reference-person -margin-bottom-1sp">
         <div class="resume__reference-avatar">
-          <i class="fas fa-user"></i>
+          <app-icon :iconId="'user'" />
         </div>
         <div
           class="margin-bottom-1sp resume__reference-line reference-line--name"
@@ -22,19 +22,17 @@
       </div>
       <div class="margin-bottom-1sp resume__reference-line">
         <small
-          ><i class="fas fa-phone margin-right-2sp"></i
-        ></small>
+          ><app-icon :iconId="'phone'" /></small>
       </div>
       <div class="resume__reference-line">
         <small
-          ><i class="fas fa-envelope margin-right-2sp"></i
-        ></small>
+          ><app-icon :iconId="'mail'" /></small>
       </div>
     </div>
     <div class="column-row">
       <div class="resume__reference-person margin-bottom-1sp">
         <div class="resume__reference-avatar">
-          <i class="fas fa-user"></i>
+          <app-icon :iconId="'user'" />
         </div>
         <div
           class="margin-bottom-1sp resume__reference-line reference-line--name"
@@ -47,13 +45,11 @@
       </div>
       <div class="margin-bottom-1sp resume__reference-line">
         <small
-          ><i class="fas fa-phone margin-right-2sp"></i
-        ></small>
+          ><app-icon :iconId="'phone'" /></small>
       </div>
       <div class="resume__reference-line">
         <small
-          ><i class="fas fa-envelope margin-right-2sp"></i
-        ></small>
+          ><app-icon :iconId="'mail'" /></small>
       </div>
     </div>
   </section>

@@ -17,6 +17,7 @@
     "graphql": "^14.6.0",
     "graphql-tag": "^2.10.3",
     "nuxt": "^2.0.0",
+    "nuxt-svg-sprite-module": "^1.0.6",
     "vue-datocms": "0.0.4"
   },
   "devDependencies": {

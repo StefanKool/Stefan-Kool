@@ -2,9 +2,7 @@
   <section class="margin-bottom-5sp">
     <h5 class="type--bold-sc no-margin-top">Languages</h5>
     <div class="column-row">
-      <div
-        class="resume__icon-panel icon-panel--flag flag-icon-nl"
-      ></div>
+      <app-icon class="resume__icon-panel app-icon--flag" :iconId="'flag-nl'" />
       <div class="resume__progress-bar">
         <div
           class="resume__progress-bar-indication"
@@ -13,9 +11,7 @@
       </div>
     </div>
     <div class="column-row">
-      <div
-        class="resume__icon-panel icon-panel--flag flag-icon-gb"
-      ></div>
+      <app-icon class="resume__icon-panel app-icon--flag" :iconId="'flag-gb'" />
       <div class="resume__progress-bar">
         <div
           class="resume__progress-bar-indication"
@@ -24,9 +20,7 @@
       </div>
     </div>
     <div class="column-row">
-      <div
-        class="resume__icon-panel icon-panel--flag flag-icon-de"
-      ></div>
+      <app-icon class="resume__icon-panel app-icon--flag" :iconId="'flag-de'" />
       <div class="resume__progress-bar">
         <div
           class="resume__progress-bar-indication"

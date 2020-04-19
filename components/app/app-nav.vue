@@ -1,11 +1,13 @@
 <template>
   <nav class="comp-app-nav">
     <nuxt-link to="/">
-      <h1 class="nav-logo">
+      <app-icon :iconId="'arrow-left'" />
+      <h1 class="nav-logo" v-if="1 === 0">
         <span class="type--regular-sc type--uppercase">Stefan</span><span class="type--thin-cpr-sc type--uppercase">Kool</span>
       </h1>
     </nuxt-link>
     <nuxt-link to="/">
+      <app-icon :iconId="'home'" />
       Home
     </nuxt-link>
   </nav>

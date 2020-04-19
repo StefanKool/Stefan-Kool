@@ -100,11 +100,6 @@ export default {
   padding-left: 0;
 }
 
-.resume__header-item {
-  font-size: 0.87rem;
-  line-height: 1.5;
-}
-
 .header-item--date {
   position: absolute;
   right: 40px;
@@ -114,7 +109,20 @@ export default {
 .resume__contact-details {
   bottom: 0;
   position: absolute;
-  padding: 10px 0;
+  padding: 1rem 0;
+  display: flex;
+  justify-items: flex-start;
+}
+
+.resume__header-item {
+  font-size: 0.87rem;
+  line-height: 1.5;
+  svg {
+    margin-right: 0.5rem;
+  }
+  span {
+    margin-right: 1rem;
+  }
 }
 
 .print {

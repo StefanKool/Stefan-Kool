@@ -4,21 +4,18 @@
       class="resume__portfolio-panel"
       :style="{ backgroundColor: backgroundColor }"
     >
-      <img
+      <app-image
         v-if="insetPrimary"
-        :src="`~/assets/img/${insetPrimary}`"
-        :width="insetPrimaryWidth"
+        :imgFileName="insetPrimary"
+        :imgWidth="insetPrimaryWidth"
       />
-      <img
+      <app-image
         v-if="insetSecondary"
-        :src="`~/assets/img/${insetSecondary}`"
-        :width="insetSecondaryWidth"
+        :imgFileName="insetSecondary"
+        :imgWidth="insetSecondaryWidth"
       />
     </div>
-    <span
-      v-if="title"
-      class="type--bold-sc"
-    >
+    <span v-if="title" class="type--bold-sc">
       {{ title }}
     </span>
     <p v-if="description">

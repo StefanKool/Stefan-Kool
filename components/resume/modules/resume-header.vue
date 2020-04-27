@@ -2,10 +2,11 @@
   <header class="resume__header">
     <div class="container container--grid">
       <div class="resume__aside resume--padding">
-        <img
-          :src="`~/assets/img/${header.photo.src}`"
-          :width="header.photo.width"
-          :height="header.photo.height"
+        <app-image
+          :imgFileName="header.photo.src"
+          :imgWidth="header.photo.width"
+          :imgHeight="header.photo.height"
+          class="resume__header-img"
         />
       </div>
       <div class="resume__body resume--padding no-padding-left">
@@ -69,11 +70,17 @@ export default {
   position: relative;
   padding-bottom: 0;
   overflow: hidden;
+  h1 {
+    margin-top: 0;
+  }
 }
 
-.resume__header img {
+.resume__header-img {
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.26), 0 6px 12px rgba(0, 0, 0, 0.43);
   vertical-align: bottom;
+  height: auto;
+  width: auto;
+  max-width: 100%;
 }
 
 .resume__download {

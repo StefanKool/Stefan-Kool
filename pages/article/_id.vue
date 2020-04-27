@@ -11,7 +11,7 @@
       <h2 class="type--bold-sc">
         {{ post.title }}
       </h2>
-      <div v-html="post.content" />
+      <div v-html="htmlBody" />
     </article>
   </section>
 </template>
@@ -19,6 +19,7 @@
 <script>
 import { request, gql, imageFields, seoMetaTagsFields } from '~/lib/datocms'
 import { toHead } from 'vue-datocms'
+import renderMarkedContent from '~/lib/render-marked'
 import format from 'date-fns/format'
 import parseISO from 'date-fns/parseISO'
 
@@ -73,6 +74,11 @@ export default {
   methods: {
     formatDate(date) {
       return format(parseISO(date), 'PPP')
+    }
+  },
+  computed: {
+    htmlBody () {
+      return renderMarkedContent(this.post.content)
     }
   },
   head() {

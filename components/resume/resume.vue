@@ -10,6 +10,9 @@
             <resume-online
               v-if="item.module === 'online'"
               :key="'online-' + index"
+              :title="item.title"
+              :subTitle="item.subTitle"
+              :items="item.items"
             />
             <resume-references
               v-if="item.module === 'references'"
@@ -18,10 +21,16 @@
             <resume-languages
               v-if="item.module === 'languages'"
               :key="'languages-' + index"
+              :title="item.title"
+              :subTitle="item.subTitle"
+              :items="item.items"
             />
             <resume-aside-list
               v-if="item.module === 'aside-list'"
               :key="'aside-list-' + index"
+              :title="item.title"
+              :subTitle="item.subTitle"
+              :items="item.items"
             />
             <resume-download
               v-if="item.module === 'download'"
@@ -98,6 +107,12 @@ export default {
 
 .comp-resume {
   margin-bottom: 2.5rem;
+
+  section {
+    *:first-child {
+      margin-top: 0;
+    }
+  }
 }
 
 .resume__aside {
@@ -125,62 +140,9 @@ export default {
 */
 
 .border__right {
-  // margin-top: 1.5rem;
   border-right: 1px solid #e7e8e1;
 }
 
-.column-row {
-  position: relative;
-  margin-bottom: 0.5rem;
-}
-
-.column-row svg {
-  vertical-align: middle;
-}
-
-svg {
-  vertical-align: top;
-  fill: grey;
-}
-
-// 1sp = 0.5rem ~ 8px
-/*
-.margin-bottom-1sp {
-  margin-bottom: 0.5rem;
-}
-
-.margin-bottom-2sp {
-  margin-bottom: 1rem;
-}
-
-.margin-bottom-5sp {
-  margin-bottom: 2.5rem;
-}
-
-.margin-bottom-40px {
-  margin-bottom: 2.5rem;
-}
-
-.margin-right-1sp {
-  margin-right: 0.5em;
-}
-
-.margin-right-2sp {
-  margin-right: 1em;
-}
-
-.no-padding-bottom {
-  padding-bottom: 0;
-}
-
-.no-padding-left {
-  padding-left: 0;
-}
-
-.padding-top-2p {
-  padding-top: 1rem;
-}
-*/
 /*
 **  print stuff
 */

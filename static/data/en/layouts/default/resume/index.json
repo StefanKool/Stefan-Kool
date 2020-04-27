@@ -16,16 +16,112 @@
   },
   "aside": [
     {
-      "module": "online"
+      "module": "online",
+      "title": "Online",
+      "items": [
+        {
+          "title": "linkedin.com",
+          "href": "http://bit.ly/2HTALK4",
+          "hrefTitle": "my linkedin page",
+          "icon": "linkedin",
+          "backgroundColor": "#0177b5"
+        },
+        {
+          "title": "scrum.org",
+          "href": "http://bit.ly/2G3Cdcp",
+          "hrefTitle": "my scrum.org page",
+          "icon": "globe",
+          "backgroundColor": "#4eabc0"
+        },
+        {
+          "title": "strava.com",
+          "href": "http://bit.ly/2GPScMc",
+          "hrefTitle": "my strava page",
+          "icon": "strava",
+          "backgroundColor": "#fc4c02"
+        },
+        {
+          "title": "stefankool.nl",
+          "href": "http://bit.ly/2uf95xw",
+          "hrefTitle": "my photography page",
+          "icon": "camera",
+          "backgroundColor": ""
+        },
+        {
+          "title": "bitbucket.org",
+          "href": "https://bit.ly/2NoYZig",
+          "hrefTitle": "my bitbucket page",
+          "icon": "bitbucket",
+          "backgroundColor": "#0747A6"
+        }
+      ]
     },
     {
       "module": "references"
     },
     {
-      "module": "languages"
+      "module": "languages",
+      "title": "Languages",
+      "subTitle": "",
+      "items": [
+        {
+          "title": "Dutch",
+          "icon": "flag-nl",
+          "width": "100%"
+        },
+        {
+          "title": "English",
+          "icon": "flag-gb",
+          "width": "80%"
+        },
+        {
+          "title": "German",
+          "icon": "flag-de",
+          "width": "40%"
+        }
+      ]
     },
     {
-      "module": "aside-list"
+      "module": "aside-list",
+      "title": "Skills",
+      "subTitle": "Programming:",
+      "items": [
+        "HTML5",
+        "CSS3, SASS/SCSS",
+        "JS, jQuery, VUE",
+        "PHP, Codeigniter, Wordpress",
+        "SQL databases",
+        "Front-end optimalisation, SEO",
+        "Google AMP pages",
+        "Git <small>(Gitflow, Trunk based)</small>"
+      ]
+    },
+    {
+      "module": "aside-list",
+      "subTitle": "Dev environment:",
+      "items": [
+        "Virtual Machine's",
+        "Vagrant: Laravel homestead, Scotch Box"
+      ]
+    },
+    {
+      "module": "aside-list",
+      "subTitle": "Atlassian administrator:",
+      "items": [
+        "Jira",
+        "Confluence",
+        "Tempo",
+        "Bitbucket"
+      ]
+    },
+    {
+      "module": "aside-list",
+      "title": "Hobbies:",
+      "items": [
+        "Badminton",
+        "Triathlon",
+        "Photography"
+      ]
     },
     {
       "module": "download"
@@ -46,7 +142,7 @@
           "subTitle": "de Voorhoede B.V.",
           "description": "Scrum Master en Front-end web development; responsive HTML templating van design naar CMS beheerbare componenten, JS DOM manipulatie, opzetten en onderhouden van workflows en CSS libraries binnen corporate domeinen, front-end optimalisaties en Google AMP pages, A/B tests, speciale campagne pagina’s. Account management en opstellen van offertes. Twee en een half jaar ervaring binnen Scrum teams als developer.",
           "startYear": 2018,
-          "endYear": 2019,
+          "endYear": 2020,
           "achievements": [],
           "portfolio": [
             {

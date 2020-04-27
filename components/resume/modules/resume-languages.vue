@@ -1,39 +1,38 @@
 <template>
-  <section class="margin-bottom-5sp">
-    <h5 class="type--bold-sc no-margin-top">Languages</h5>
-    <div class="column-row">
-      <app-icon class="resume__icon-panel app-icon--flag" :iconId="'flag-nl'" />
-      <div class="resume__progress-bar">
-        <div
-          class="resume__progress-bar-indication"
-          style="width: 100%;"
-        ></div>
-      </div>
-    </div>
-    <div class="column-row">
-      <app-icon class="resume__icon-panel app-icon--flag" :iconId="'flag-gb'" />
-      <div class="resume__progress-bar">
-        <div
-          class="resume__progress-bar-indication"
-          style="width: 80%;"
-        ></div>
-      </div>
-    </div>
-    <div class="column-row">
-      <app-icon class="resume__icon-panel app-icon--flag" :iconId="'flag-de'" />
-      <div class="resume__progress-bar">
-        <div
-          class="resume__progress-bar-indication"
-          style="width: 40%;"
-        ></div>
-      </div>
-    </div>
+  <section class="mod-languages">
+    <h5 v-if="title" v-html="title" class="type--bold-sc"></h5>
+    <span v-if="subTitle" v-html="subTitle" class="type--bold-sc"></span>
+     <ul v-if="items.length">
+      <li v-for="(item, index) in items" :key="index">
+        <app-icon class="resume__icon-panel app-icon--flag" :iconId="item.icon" />
+        <div class="resume__progress-bar">
+          <div
+            class="resume__progress-bar-indication"
+            :style="{ width: item.width }"
+          ></div>
+        </div>
+      </li>
+    </ul>
   </section>
 </template>
 
 <script>
 export default {
-  name: 'resume-languages'
+  name: 'resume-languages',
+  props: {
+    title: {
+      type: String
+    },
+    subTitle: {
+      type: String
+    },
+    items: {
+      type: Array,
+      default: function() {
+        return { items: [] }
+      }
+    }
+  }
 }
 </script>
 
@@ -41,21 +40,27 @@ export default {
 /* add utilities */
 @import "~assets/scss/utilities.scss";
 
-.icon-panel--flag {
+.mod-languages {
+  ul {
+    list-style: none;
+    padding: 0;
+    li {
+      display: flex;
+    }
+  }
+}
+
+.app-icon--flag {
   display: block;
 }
 
 .resume__progress-bar {
   height: 0.6rem;
-  position: absolute;
-  left: 2.5rem;
-  right: 0;
-  top: 0;
   margin: 0.7rem 0;
-  float: right;
   background-color: #f3f3f3;
   border-radius: 4px;
   overflow: hidden;
+  flex-grow: 1;
 }
 
 .resume__progress-bar-indication {
